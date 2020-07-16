@@ -1,1 +1,5 @@
-ascii_invaders
+build/ascii_invaders
+build/CMakeCache.txt
+build/CMakeFiles/
+build/Makefile
+build/cmake_install.cmake

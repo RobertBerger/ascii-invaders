@@ -888,12 +888,7 @@ void addBomb(int x, int y) {
     struct Bomb *b;
     b = malloc(sizeof(struct Bomb));
     if (b == NULL) {
-	/* If we run out of memory, just don't add a bomb.
-	 * Well overcommit likely means this never happens, and
-	 * instead in the event of memory shortage b will not be NULL
-	 * but will not have physical memory available and we'll just crash
-	 * when we attempt to access it.  But this shuts scan-build up. */
-	return;
+        // die("Out of memory");
     }
     b->x = x;
     b->y = y;
